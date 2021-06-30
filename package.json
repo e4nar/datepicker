@@ -5,7 +5,8 @@
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+	"build-bundle": "vue-cli-service build --target lib --name datepicker ./src/index.js"
   },
   "repository": {
     "type": "git",
@@ -29,7 +30,11 @@
     "not dead"
   ],
   "files": [
-    "dist/*"
+    "dist/*",
+	"src/*",
+	"public/*",
+	"*.json",
+	"*.js"
   ],
-  "main": "./dist/index.js"
+  "main": "./dist/datepicker.common.js"
 }

@@ -1,4 +1,7 @@
+import Vue from 'vue'
 import Datepicker from "./components/Datepicker";
+
+import './assets/scss/app.scss'
 
 export default {
     install(Vue, options) {
