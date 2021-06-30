@@ -1,5 +1,5 @@
 {
-  "name": "datepicker",
+  "name": "@efournar/datepicker",
   "description": "Date or datetime picker ui element. It can work as single value or select range.",
   "version": "0.1.0",
   "private": false,
