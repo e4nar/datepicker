@@ -1,12 +1,7 @@
-import Datepicker from "./components/Datepicker.vue";
+import Vue from 'vue';
+import Datepicker from './components/Datepicker.vue';
 import './assets/scss/app.scss'
 
-function install(Vue){
-    Vue.component("datepicker", Datepicker);
-}
-export {
-    Datepicker,
-    install
-};
+Vue.component('datepicker', Datepicker);
 
 export default Datepicker;
