@@ -1,12 +1,12 @@
 {
   "name": "@efournar/datepicker",
   "description": "Date or datetime picker ui element. It can work as single value or select range.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-	"build-bundle": "vue-cli-service build --target lib --name datepicker ./src/index.js"
+    "build-bundle": "vue-cli-service build --target lib --name datepicker ./src/index.js"
   },
   "repository": {
     "type": "git",
@@ -31,10 +31,10 @@
   ],
   "files": [
     "dist/*",
-	"src/*",
-	"public/*",
-	"*.json",
-	"*.js"
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
   ],
   "main": "./dist/datepicker.common.js"
 }
