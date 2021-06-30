@@ -1,0 +1,12 @@
+// Define variable defaults
+//$body-bg: #fff;
+//$body-color: #111;
+
+$primary-color: #007bff;
+$secondary-color: rgba(0, 123, 255, 0.11);
+
+// Then import Bootstrap an BootstrapVue SCSS files (order is important)
+@import '~bootstrap';
+@import '~bootstrap-vue';
+
+@import "datepicker";

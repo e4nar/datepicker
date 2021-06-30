@@ -1,0 +1,205 @@
+.datepicker {
+    font-size: 12px;
+    width: 202px;
+    position: relative;
+
+    .datepicker-container {
+        width: 200px;
+    }
+    .datepicker-popup {
+        position:absolute;
+        background-color: #fff;
+        top:100%;
+        border: 1px solid #ced4da;
+        z-index: 50;
+
+        .preview {
+            text-align: center;
+            display: flex;
+            justify-content: left;
+            padding: 5px 10px;
+            background-color: $primary-color;
+            color: #fff;
+            min-height: 28px;
+
+            .placeholder {
+                font-size: 15px;
+            }
+            .separator {
+                flex-basis: 30px;
+                font-size: 14px;
+                line-height: 18px;
+            }
+
+            .calendar-selection {
+                display: flex;
+
+                .date {
+                    font-size: 15px;
+                    margin-right: 5px
+                }
+                .time {
+                    font-size: 11px;
+                    text-align: center;
+                    line-height: 22px;
+                }
+            }
+        }
+
+        .calendars {
+            display: flex;
+
+
+            .calendar {
+                width: 245px;
+                padding: 10px;
+
+                table {
+
+                    th, td {
+                        width: 31px;
+                        height: 31px;
+                        text-align: center;
+                        padding: 0;
+
+                    }
+
+                    td {
+
+                        .date {
+                            width: 31px;
+                            height: 31px;
+                            display: inline-block;
+                            text-align: center;
+                            line-height: 29px;
+
+                            cursor: pointer;
+                            color: rgb(51,51,51);
+                            font-size: 13px;
+                            font-weight: normal;
+
+                            &.complementary-date {
+                                opacity: 0.9;
+                                color: rgb(100,100,100);
+                                font-weight: lighter;
+
+                                &.in-range,
+                                &.selected-from,
+                                &.selected-to {
+                                    background-color: transparent;
+                                    color: rgb(51,51,51);
+                                }
+                            }
+
+                            &:hover {
+                                background-color: $primary-color;
+                                color: #fff;
+                                border-radius: 3px!important;
+                            }
+
+                            &.disabled-week-day,
+                            &.disabled-month-date,
+                            &.disabled-min-date,
+                            &.disabled-max-date {
+                                opacity: 0.25;
+                                pointer-events: none;
+                            }
+                            &.disabled-lower-than-selection {
+                                /*for future use*/
+                            }
+
+                            &.selected-from {
+                                background-color: $primary-color;
+                                color: #fff;
+                                border-radius: 3px 0 0 3px;
+                            }
+                            &.selected-to {
+                                background-color: $primary-color;
+                                color: #fff;
+                                border-radius: 0 3px 3px 0;
+                            }
+                            &.selected {
+                                background-color: $primary-color;
+                                color: #fff;
+                                border-radius: 3px!important;
+                            }
+                            &.today {
+                                font-weight: bold;
+                            }
+                            &.in-range {
+                                background-color: $secondary-color;
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+
+
+                .header {
+                    display: flex;
+                    align-items: center;
+                    height: 34px;
+
+                    .chevron-container {
+                        display: inline-block;
+                        width: 30px;
+                        height: 30px;
+                        background-color: transparent;
+                        position: relative;
+                        line-height: 29px;
+                        font-size: 15px;
+                        text-align: center;
+                        cursor: pointer;
+                        &:hover {
+                            background-color: #f3f3f3;
+                            border-radius: 5px;
+                        }
+                    }
+
+                    .select-month, .select-year {
+                        margin:0 5px;
+                        border: none;
+                    }
+                    .select-month {
+                        width: 66px;
+                    }
+                    .select-year {
+                        width: 74px!important;
+                    }
+
+                }
+
+                .footer {
+                    padding: 10px 0;
+                    display: flex;
+                    justify-content: center;
+                    .select-hours, .select-minutes, .select-seconds {
+                        margin:0 1px;
+                        display: inline-block;
+                        width: 60px;
+                        border: none;
+                    }
+                }
+
+            }
+
+            .timepicker {
+                padding: 0 0 10px;
+                display: flex;
+                justify-content: center;
+                .select-hours, .select-minutes, .select-seconds {
+                    margin:0 1px;
+                    display: inline-block;
+                    width: 60px;
+                    border: none;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .suggested-ranges ul li {
+            font-size: 13px;
+        }
+
+    }
+}
