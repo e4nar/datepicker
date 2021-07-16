@@ -3,8 +3,7 @@
 ![npm](https://img.shields.io/npm/dt/@efournar/datepicker)
 ![GitHub](https://img.shields.io/github/license/e4nar/datetimepicker)
 
-###Screenshot
-<img src="./images/screenshot.png" width="70%">
+<img src="./images/screenshot.png" style="max-width: 70%">
 
 
 ### Install with NPM
